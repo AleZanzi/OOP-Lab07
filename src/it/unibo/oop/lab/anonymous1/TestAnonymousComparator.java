@@ -78,11 +78,11 @@ public final class TestAnonymousComparator {
          */
         // TODO
         final var ascending = new Comparator<User>() {
-        	public int compare(final User a , final User b) {
-        		return Integer.compare(a.getAge() , b.getAge());
+        	public int compare(final User a, final User b) {
+        		return Integer.compare(a.getAge(), b.getAge());
         	}
         };
-        Collections.sort(denzelUsers , ascending);
+        Collections.sort(denzelUsers, ascending);
         /*
          * expected Result
          */
@@ -115,11 +115,11 @@ public final class TestAnonymousComparator {
          */
         // TODO
         final var decreasing = new Comparator<User>() {
-        	public int compare(final User a , final User b) {
-        		return Integer.compare(b.getAge() , a.getAge());
+        	public int compare(final User a, final User b) {
+        		return Integer.compare(b.getAge(), a.getAge());
         	}
         };
-        Collections.sort(rossiUsers , decreasing);
+        Collections.sort(rossiUsers, decreasing);
         /*
          * expected Result
          */
